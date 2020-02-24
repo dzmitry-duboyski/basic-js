@@ -1,11 +1,5 @@
 module.exports = function transform(arr) {
-  let df = arr.length
-  if (arr instanceof SyntaxError) {
-    console.log("SyntaxError");
-  }
-  if (!Array.isArray(arr)) {
-    throw 'Error';
-  }
+  if (!Array.isArray(arr))  throw 'Error';
 
   let resultArray = [];
 
